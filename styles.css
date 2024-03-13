@@ -11,12 +11,10 @@
   --white: #ffffff;
   --yellow: #f1be32;
 }
-
 body {
   color: var(--white);
   background-color: var(--dark-grey);
 }
-
 .title-container {
   margin: 10px 0;
   display: flex;
@@ -24,29 +22,24 @@ body {
   justify-content: center;
   gap: 8px;
 }
-
 .title {
   font-size: 2.5rem;
 }
-
 .date-svg {
   width: 30px;
   height: 30px;
 }
-
 .divider {
   margin: auto;
   width: 150px;
   height: 10px;
   background-color: var(--yellow);
 }
-
 .dropdown-container {
   width: 50%;
   margin: 40px auto;
   position: relative;
 }
-
 select {
   display: block;
   margin: 20px auto 0;
@@ -61,12 +54,11 @@ select {
   appearance: none;
   padding: 10px;
   padding-right: 38px;
-  -webkit-appearance: none;
+  --webkit-apperance: none;
   -moz-appearance: none;
   transition: color 0.3s ease, background-color 0.3s ease,
     border-bottom-color 0.3s ease;
 }
-
 .select-icon {
   position: absolute;
   top: 4px;
@@ -77,26 +69,21 @@ select {
   padding-left: 5px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-
-.select-icon svg.icon {
+.select-icon-svg.icon {
   transition: fill 0.3s ease;
   fill: var(--dark-grey);
 }
-
 #current-date {
   font-size: 2rem;
   text-align: center;
 }
-
 @media (max-width: 375px) {
   .title {
     font-size: 2rem;
   }
-
   .dropdown-container {
     width: 80%;
   }
-
   .date-svg {
     display: none;
   }
